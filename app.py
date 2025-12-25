@@ -5,8 +5,12 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def base():  # put application's code here
-    return render_template("base.html")
+def main_page():  # put application's code here
+    return render_template("main.html", name="main", title="Главная")
+
+# @app.route('/')
+# def base():  # put application's code here
+#     return render_template("base.html")
 
 
 if __name__ == '__main__':
