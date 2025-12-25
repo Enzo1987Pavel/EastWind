@@ -89,7 +89,90 @@ html {
     }
 
     .btn-up-icon {
-      width: 20px;
-      height: 20px;
-      fill: currentcolor;
+        width: 20px;
+        height: 20px;
+        fill: currentcolor;
+    }
+
+        table {
+        alignment: center;
+        margin: auto;  /* center of the table */
+        border-collapse: separate; /* separate between cells */
+        border-spacing: 15px; /* separate between cells (range) */
+        width: 95%; /* width of the column */
+    }
+
+    TD {
+        text-align: center;
+        align: center;
+        border: 20px;
+        color: rgb(0, 43, 73);
+    }
+
+    #col00 {
+        width: 95%; /* Ширина нульнулевой колонки */
+        vertical-align: center;
+        text-align: left;
+        padding: 20px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+        font-size: 26px;
+        font-weight: bold;
+        background: rgb(0, 156, 174);
+        background: linear-gradient(90deg, rgba(201, 0, 255, 1) 0%, rgba(73, 9, 121, 1) 35%, rgba(0, 156, 174, 0.824) 100%);
+    }
+    #col0 {
+        width: 95%; /* Ширина нулевой колонки */
+        color: rgb(255, 255, 0);
+        text-shadow: 1px 0 rgb(128,128,128),2px 2px 1px rgba(0,0,0,1);
+        vertical-align: center; /* Цвет фона нулевой колонки */
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+        font-size: 25px;
+        font-weight: bold;
+        background: rgb(0,228,222);
+        background: linear-gradient(90deg, rgba(0,228,222,1) 0%, rgba(0,137,156,0.950) 61%, rgba(0,121,117,0.824) 100%);
+    }
+    #col1 {
+        width: 20%; /* Ширина первой колонки */
+        background: #e8ae08; /* Цвет фона первой колонки */
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+    }
+    #col_App {
+        align: left;
+        text-align: left;
+        /*{#width: 20%; !* Ширина первой колонки *!#}*/
+        /*{#background: rgba(67, 255, 0, 0.5); !* Цвет фона первой колонки *!#}*/
+        /*{#padding: 10px;#}*/
+        /*{#border-radius: 10px 10px 10px 10px;#}*/
+        /*{#box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);#}*/
+    }
+    .TextInColumn {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #col2 {
+        width: 60%; /* Ширина второй колонки */
+        background: #f0f0f0; /* Цвет фона второй колонки */
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+    }
+    #col3 {
+        width: 20%; /* Ширина третьей колонки */
+        background: #e8ae08; /* Цвет фона третьей колонки */
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+    }
+
+    #col4_1 {
+        width: 20%; /* Ширина четвертой колонки */
+        background: #e8ae08; /* Цвет фона четвертой колонки */
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
     }
