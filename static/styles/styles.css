@@ -1,0 +1,95 @@
+.watermark {
+    border: 3px;
+    border: black solid;
+}
+
+html {
+        background: url(/static/img/bg00.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        scroll-behavior: smooth;
+        /*opacity: 0.2;*/
+    }
+
+    body {
+        margin: 0;
+        color: #000000;
+        /* Растягиваем body по высоте html */
+        min-height: 50%;
+        min-width: 50%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .footer {
+        text-align: right;
+        font-weight: bold;
+        color: #005a9d;
+        margin-bottom: 5px;
+        position: fixed;  /*absolute;*/ /* footer всегда в нижней части экрана */
+        bottom: 0;
+        width: 100%;
+    }
+
+    .zoom-effect {
+        transition: 0.5s;
+    }
+
+    .zoom-effect:hover {
+        transform: scale(2);
+    }
+
+    .btn-up {
+        /*content: "\21E7 Наверх";*/
+        font-family: "Times New Roman", Arial, sans-serif; /* Гарнитура шрифта */
+        font-size: 16px; /* Размер текста подсказки */
+        padding: 5px; /* Поля */
+        text-align: center;
+        align-content: center;
+      position: fixed;
+      background-color: #002f50;
+      right: 10px;
+      bottom: 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      display: flex;
+        justify-content: center;
+      transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+      transform: translateY(0);
+        z-index: 9999;
+        letter-spacing: 2px;
+    }
+
+    .btn-up {
+        align-items: center;
+    }
+
+    /*!*Кнопка наверх и надпись после стрелки*!*/
+    /*.btn-up:after{*/
+    /*    content: "Наверх";*/
+    /*    font-family: "Times New Roman", Arial, sans-serif; !* Гарнитура шрифта *!*/
+    /*    font-size: 16px; !* Размер текста подсказки *!*/
+    /*    padding: 5px; !* Поля *!*/
+    /*    text-align: center;*/
+    /*}*/
+
+    .btn-up_hide {
+      display: none;
+    }
+
+    .btn-up_hiding {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    .btn-up-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentcolor;
+    }

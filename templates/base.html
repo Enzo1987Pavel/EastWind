@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,3 +13,153 @@
 
 </body>
 </html>
+=======
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+        {% block title -%}
+            {% if title %}
+                <title>Восточный ветер - {{title}}</title>
+            {% else %}
+                <title>Восточный ветер</title>
+            {% endif %}
+        {% endblock %}
+
+    <!--icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/media/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/media/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/media/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="/static/media/favicon.ico">
+        <link rel="manifest" href="/static/media/site.webmanifest">
+        <link rel="mask-icon" href="/static/media/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    <!--icon -->
+        <meta content="application/pdf">
+
+        <link rel="stylesheet" href="/static/styles/styles.css">
+
+</head>
+
+<!--no selection
+<script type="text/javascript">
+	document.ondragstart = noselect;
+	document.onselectstart = noselect;
+	document.oncontextmenu = noselect;
+	function noselect() {return false;}
+</script>
+-->
+
+    <script>
+        function updateLiveTime() {
+            const now = new Date();
+            const options = {
+                weekday: "short",
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit"
+            };
+            document.getElementById("live-time").textContent = now.toLocaleString("ru-RU", options);
+          }
+        setInterval(updateLiveTime, 100);
+        updateLiveTime();
+    </script>
+
+<body>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .time_now {
+            text-align: right;
+            font-weight: bolder;
+            margin-top: 5px;
+            margin-right: 10px;
+            padding-top: 5px;
+            color: rgb(41, 74, 108);
+        }
+        .time_now:hover::after {
+            content: attr(data-title); /* Выводим текст */
+            position: absolute; /* Абсолютное позиционирование */
+            left: 88%;
+            top: 4%; /* Положение подсказки */
+            text-align: center;
+            z-index: 1; /* Отображаем подсказку поверх других элементов */
+            background: rgba(255, 255, 230, 0.85); /* Полупрозрачный цвет фона */
+            font-family: "Times New Roman", Arial, sans-serif; /* Гарнитура шрифта */
+            font-size: 14px; /* Размер текста подсказки */
+            color: #002036;
+            padding: 5px; /* Поля */
+            border: 1px solid #333; /* Параметры рамки */
+            border-radius: 5px;
+        }
+    </style>
+
+    <div id="live-time" class="time_now" data-title="Текущие дата и время"></div>
+
+{% block content -%}
+    {%- block mainmenu -%}
+{#        <ul>#}
+{#            {% for m in menu -%}#}
+{#                <li>{{m}}</li>#}
+{#            {% endfor -%}#}
+{#        </ul>#}
+    {% endblock mainmenu -%}
+{#    {% if title -%}#}
+{#        <h1>{{title}}</h1>#}
+{#    {% else -%}#}
+{#        <h1>Классификатор</h1>#}
+{#    {% endif -%}#}
+{% endblock -%}
+
+
+      <div class="btn-up btn-up_hide" title="Наверх страницы">&#129145;</div>
+
+<script>
+    const btnUp = {
+      el: document.querySelector('.btn-up'),
+      show() {
+        // удалим у кнопки класс btn-up_hide
+        this.el.classList.remove('btn-up_hide');
+      },
+      hide() {
+        // добавим к кнопке класс btn-up_hide
+        this.el.classList.add('btn-up_hide');
+      },
+      addEventListener() {
+        // при прокрутке содержимого страницы
+        window.addEventListener('scroll', () => {
+          // определяем величину прокрутки
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+          scrollY > 400 ? this.show() : this.hide();
+        });
+        // при нажатии на кнопку .btn-up
+        document.querySelector('.btn-up').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+
+    btnUp.addEventListener();
+</script>
+
+
+
+     <div class="footer">
+        <div style="margin-right: 5px; padding-top: 5px;">&copy;&nbsp;Павел Есаулов</div>
+    </div>
+    </body>
+</html>
+>>>>>>> 4103731 (225)
