@@ -26,7 +26,7 @@ html {
     .footer {
         text-align: right;
         font-weight: bold;
-        color: #005a9d;
+        color: #00259d;
         margin-bottom: 5px;
         position: fixed;  /*absolute;*/ /* footer всегда в нижней части экрана */
         bottom: 0;
@@ -106,7 +106,7 @@ html {
         text-align: center;
         align: center;
         border: 20px;
-        color: rgb(0, 43, 73);
+        color: rgb(0, 86, 185);
     }
 
     #col00 {
@@ -119,7 +119,7 @@ html {
         font-size: 26px;
         font-weight: bold;
         background: rgb(0, 156, 174);
-        background: linear-gradient(90deg, rgba(201, 0, 255, 1) 0%, rgba(73, 9, 121, 1) 35%, rgba(0, 156, 174, 0.824) 100%);
+        background: linear-gradient(90deg, rgba(201, 120, 55, 1) 0%, rgba(0, 156, 174, 0.824) 100%);
     }
     #col0 {
         width: 95%; /* Ширина нулевой колонки */
