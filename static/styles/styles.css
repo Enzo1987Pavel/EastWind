@@ -29,7 +29,7 @@ html {
         margin-top: 5px;
         margin-left: 10px;
         padding-top: 5px;
-        color: rgb(0, 86, 185);
+        color: rgb(75, 75, 75);
     }
     .footer {
         text-align: right;
@@ -110,6 +110,12 @@ html {
         width: 95%; /* width of the column */
     }
 
+    .TD_top {
+        text-align: left;
+        align: left;
+        border: 20px;
+        color: rgb(75, 75, 75);
+    }
     TD {
         text-align: center;
         align: center;
