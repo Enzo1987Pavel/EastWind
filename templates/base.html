@@ -56,6 +56,16 @@
 
 <body>
 
+     <table>
+         <tbody>
+            <tr>
+                <td colspan="3" width="90%" class="header"><a href={{ url_for("main_page") }} ; title="Переход на главную страницу">{{ title }}</a></td>
+
+                <td colspan="3" width="10%" id="live-time" class="time_now" data-title="Текущие дата и время"></td>
+            </tr>
+         </tbody>
+     </table>
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -86,7 +96,6 @@
         }
     </style>
 
-    <div id="live-time" class="time_now" data-title="Текущие дата и время"></div>
 
 {% block content -%}
     {%- block mainmenu -%}
@@ -140,8 +149,7 @@
     btnUp.addEventListener();
 </script>
 
-
-     <div class="footer">
+    <div class="footer">
         <div style="margin-right: 5px; padding-top: 5px;">&copy;&nbsp;Восточный ветер</div>
     </div>
     </body>

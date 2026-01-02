@@ -23,6 +23,14 @@ html {
         grid-template-rows: auto 1fr auto;
     }
 
+    .header {
+        text-align: left;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-left: 10px;
+        padding-top: 5px;
+        color: rgb(0, 86, 185);
+    }
     .footer {
         text-align: right;
         font-weight: bold;
@@ -48,20 +56,20 @@ html {
         padding: 5px; /* Поля */
         text-align: center;
         align-content: center;
-      position: fixed;
-      background-color: #002f50;
-      right: 10px;
-      bottom: 30px;
-      border-radius: 25px;
-      cursor: pointer;
-      display: flex;
+        position: fixed;
+        background-color: #002f50;
+        right: 10px;
+        bottom: 30px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: flex;
         justify-content: center;
-      transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
-      color: #fff;
-      width: 40px;
-      height: 40px;
-      opacity: 1;
-      transform: translateY(0);
+        transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        transform: translateY(0);
         z-index: 9999;
         letter-spacing: 2px;
     }
@@ -94,7 +102,7 @@ html {
         fill: currentcolor;
     }
 
-        table {
+    table {
         alignment: center;
         margin: auto;  /* center of the table */
         border-collapse: separate; /* separate between cells */
@@ -118,9 +126,10 @@ html {
         box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
         font-size: 26px;
         font-weight: bold;
-        background: rgb(0, 156, 174);
-        background: linear-gradient(90deg, rgba(201, 120, 55, 1) 0%, rgba(0, 156, 174, 0.824) 100%);
+        background: rgb(0,228,222);
+        background: linear-gradient(90deg, rgba(0,228,222,1) 0%, rgba(0,137,156,0.950) 61%, rgba(0,121,117,0.824) 100%);
     }
+
     #col0 {
         width: 95%; /* Ширина нулевой колонки */
         color: rgb(255, 255, 0);
