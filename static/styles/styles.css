@@ -171,10 +171,14 @@ html {
 
     #col2 {
         width: 60%; /* Ширина второй колонки */
-        background: #f0f0f0; /* Цвет фона второй колонки */
+        background: url(/static/img/fatbike_main.jpg);
         padding: 10px;
         border-radius: 10px 10px 10px 10px;
         box-shadow: 0 4px 8px rgba(0, 0.3, 0.3, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
     }
     #col3 {
         width: 20%; /* Ширина третьей колонки */
