@@ -1,5 +1,6 @@
 [![version](https://img.shields.io/badge/Python-v_3.10-informational/?style=social&logo=Python)](https://python.org)
 
+
 ## Проба сайта
 ---
 #### Активация виртуального окружения в терминале:
