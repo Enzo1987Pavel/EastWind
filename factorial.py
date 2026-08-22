@@ -7,8 +7,9 @@ def factorial_interact(n: int):
     result = 1
     for i in range(2, n + 1):  # начинаем с 2, так как умножение на 1 не меняет результат
         result *= i
-    print(str(result))
+    print("Ответ: " + str(result) + "\nНажми \"ENTER\" для выхода...")
     return result
 
 
 factorial_interact(int(input_string))
+input()
