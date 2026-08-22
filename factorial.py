@@ -12,3 +12,4 @@ def factorial_interact(n: int):
 
 
 factorial_interact(int(input_string))
+
